@@ -1,3 +1,10 @@
+## About Yourself
+<b>1.“Good morning! Please introduce yourself.”</b>
+
+“Good morning Sir, I am V. Saikumar. I am currently located in Tambaram. I completed my schooling at NSN Matric, Chitalapakkam, and I am currently pursuing my undergraduate degree at Saveetha Engineering College. I am very interested in .NET development and I strongly believe in continuous learning and improving my skills.
+
+I worked on a project called Student Management Record using ASP.NET MVC, where I handled backend logic and database integration to manage student information efficiently. This helped me strengthen my web development and MVC skills.”
+
 ## Javascript Basics
 
 <b>1.“What is the difference between synchronous and asynchronous JavaScript?”</b>
