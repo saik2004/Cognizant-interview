@@ -5,6 +5,15 @@
 
 I worked on a project called Student Management Record using ASP.NET MVC, where I handled backend logic and database integration to manage student information efficiently. This helped me strengthen my web development and MVC skills.”
 
+<b>2.Why should we hire you?</b>
+“You should hire me because I have a strong foundation in .NET development, I have hands-on experience with my project using ASP.NET MVC, and I am always eager to learn and adapt quickly. I am confident that I can contribute effectively to the team and grow along with the company.”
+
+<b>3.your strenght and weakness</b>
+
+“My strength is my willingness to learn and adapt, and I am also dedicated and focused, which helps me complete tasks efficiently. For example, while working on my Student Management Record project, I learned ASP.NET MVC and database integration independently to complete the backend logic.
+At the same time, one area I’m working on improving is public speaking. I used to feel nervous while explaining my ideas, but I’ve been practicing by explaining my projects and concepts to friends and mentors, and I’m becoming much more confident.”
+
+
 ## Javascript Basics
 
 <b>1.“What is the difference between synchronous and asynchronous JavaScript?”</b>
