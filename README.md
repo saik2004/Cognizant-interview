@@ -13,6 +13,57 @@ I worked on a project called Student Management Record using ASP.NET MVC, where 
 “My strength is my willingness to learn and adapt, and I am also dedicated and focused, which helps me complete tasks efficiently. For example, while working on my Student Management Record project, I learned ASP.NET MVC and database integration independently to complete the backend logic.
 At the same time, one area I’m working on improving is public speaking. I used to feel nervous while explaining my ideas, but I’ve been practicing by explaining my projects and concepts to friends and mentors, and I’m becoming much more confident.”
 
+## .NET questions
+
+<b>1.What is the difference between .NET Framework, .NET Core, and .NET 5/6/7?</b>
+.NET Framework
+
+Released in early 2000s.
+
+Works only on Windows.
+
+Used for ASP.NET Web Forms, WPF, WinForms, etc.
+
+It’s stable but no longer actively developed with new features.
+
+.NET Core
+
+Introduced in 2016.
+
+Cross-platform (Windows, Linux, macOS).
+
+Open-source and lightweight.
+
+Suitable for web apps, APIs, microservices, and cloud apps.
+
+.NET 5/6/7 (Unified .NET)
+
+From 2020 onwards, Microsoft merged everything into a single platform called .NET.
+
+Example: .NET 5, 6 (LTS), 7, and now .NET 8.
+
+Combines .NET Framework and .NET Core features → one framework for desktop, web, mobile, cloud, IoT.
+
+<b>2.Explain the ASP.NET MVC Request Lifecycle.
+(How does a request from a browser go through MVC and return a response?)</b>
+
+*"In ASP.NET MVC, when a request comes in to the Controller action method is called. Inside this method, the controller usually interacts with the Model to fetch data from the database.
+Once the data is retrieved, the controller passes it to the View, which is typically a Razor .cshtml page.
+
+<b>3.What is Entity Framework?</b>
+
+*"Entity Framework (EF) is an Object-Relational Mapper (ORM) from Microsoft. It allows developers to work with databases using C# objects instead of writing raw SQL queries. EF automatically translates LINQ queries into SQL and handles data access, so we don’t have to write ADO.NET code manually.
+
+There are two common approaches:
+
+Code First → We start by writing our C# classes (models), then EF generates the database schema. If we change the model, we use migrations to update the database.
+
+Database First → We start with an existing database, and EF generates the models (classes) and context from the database schema."*
+
+👉 Short version (if they want quick): “Entity Framework lets me interact with the database using C# objects. Code First starts from code → DB, Database First starts from DB → code.”
+
+
+
 
 ## Javascript Basics
 
