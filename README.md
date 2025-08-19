@@ -21,9 +21,10 @@ At the same time, one area I’m working on improving is public speaking. I used
 
 “Design principles in C# are used to make applications maintainable, reusable, testable, and scalable. They help in writing clean and loosely coupled code. For example, using SOLID principles improves flexibility and allows easy feature additions without modifying existing code.”
 
-<b>2.What are solid principles</b>
-<b>Siingle responsibilites principles</b>
+<b>2.What are solid principles</b><br>
+<b>Siingle responsibile principles</b>
 <img width="1900" height="908" alt="Screenshot 2025-08-19 171745" src="https://github.com/user-attachments/assets/97716633-6ce0-4a02-b941-43a440cebc93" />
+<br>
 
 
 ## .NET CORE Questions
