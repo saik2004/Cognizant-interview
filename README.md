@@ -91,6 +91,23 @@ Database First → We start with an existing database, and EF generates the mode
 
 👉 Short version (if they want quick): “Entity Framework lets me interact with the database using C# objects. Code First starts from code → DB, Database First starts from DB → code.”
 
+<b>4.Can you explain Dependency Injection (DI)?</b>
+
+*"Dependency Injection is a design pattern that removes tight coupling between classes. Instead of a class creating its own dependencies, they are injected from outside.
+For example, if a Controller needs a service, instead of writing new Service(), we let the framework provide the service. This makes the code more flexible, testable, and maintainable.
+
+<b>4.What is the difference between Authentication and Authorization in Web API?</b>
+
+*"Authentication and Authorization are two different concepts in security:
+
+Authentication → Verifies who the user is.
+
+Example: Login with username & password, or token validation.
+
+In Web API, this is usually handled with JWT (JSON Web Token), cookies, or OAuth.
+
+Authorization → Decides what the user is allowed to do after being authenticated.
+
 
 
 
