@@ -28,7 +28,16 @@ At the same time, one area I’m working on improving is public speaking. I used
 <b>Open-Closed Principle</b><br>
 <img width="1906" height="901" alt="Screenshot 2025-08-19 172250" src="https://github.com/user-attachments/assets/e46b2347-696e-4c27-ab19-5fb79f2571b6" /><br>
 <img width="1898" height="917" alt="Screenshot 2025-08-19 172303" src="https://github.com/user-attachments/assets/8a4c58d4-8da3-4c48-bf15-b2ed2c734106" /><br>
-<img width="1906" height="895" alt="Screenshot 2025-08-19 173005" src="https://github.com/user-attachments/assets/d81bc712-0f21-4ad7-bc63-f8dcd09e7c03" />
+<b>Liskov Substituion Principle</b><br>
+<img width="1906" height="895" alt="Screenshot 2025-08-19 173005" src="https://github.com/user-attachments/assets/d81bc712-0f21-4ad7-bc63-f8dcd09e7c03" /><br>
+<b>Interface Segregation Principle</b><br>
+<img width="1884" height="915" alt="Screenshot 2025-08-19 173513" src="https://github.com/user-attachments/assets/e1bf0244-d833-4437-9d69-55c0a3fd6e41" /><br>
+<b>Dependency Inversion Principle</b><br>
+<img width="1905" height="883" alt="Screenshot 2025-08-19 173926" src="https://github.com/user-attachments/assets/157f6849-ff7c-4dd0-a44a-a4bb3422beb1" />
+
+
+
+
 
 
 
