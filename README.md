@@ -160,3 +160,25 @@ const → block-scoped, cannot be redeclared or reassigned, must be initialized.
 undefined → variable declared but not assigned a value.
 
 null → intentional absence of a value, assigned by developer.
+
+## Sql questions
+
+<b>what is Sql </b>
+<img width="1919" height="879" alt="Screenshot 2025-08-20 182336" src="https://github.com/user-attachments/assets/fb34a6c2-6dc7-4864-9d7e-e10d48cecbac" /><br>
+
+<b>What is RDMS(RELATIONAL DATABASE</b>
+<img width="1905" height="830" alt="Screenshot 2025-08-20 182624" src="https://github.com/user-attachments/assets/20b5aca5-ec1e-41bd-93fb-2df4dc56b09b" /><br>
+
+<b>What are sql constraints</b>
+<img width="1641" height="702" alt="Screenshot 2025-08-20 194840" src="https://github.com/user-attachments/assets/a5956983-43a2-406d-8bf5-40d2af824d94" /><br>
+
+<b>Differnce between DELETE TRUNCATE DROP</b>
+5. Difference between DELETE, TRUNCATE, DROP
+
+DELETE → removes rows, one by one (can use WHERE). Keeps structure & identity seed.
+
+TRUNCATE → removes all rows, resets identity counter, but cannot use WHERE. Faster than DELETE.
+
+DROP TABLE → deletes the whole table (data + structure).
+
+
