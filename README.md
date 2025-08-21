@@ -172,8 +172,7 @@ null → intentional absence of a value, assigned by developer.
 <b>What are sql constraints</b>
 <img width="1641" height="702" alt="Screenshot 2025-08-20 194840" src="https://github.com/user-attachments/assets/a5956983-43a2-406d-8bf5-40d2af824d94" /><br>
 
-<b>Differnce between DELETE TRUNCATE DROP</b>
-5. Difference between DELETE, TRUNCATE, DROP
+<b>Differnce between DELETE TRUNCATE DROP</b><br>
 
 DELETE → removes rows, one by one (can use WHERE). Keeps structure & identity seed.
 
