@@ -180,4 +180,92 @@ TRUNCATE → removes all rows, resets identity counter, but cannot use WHERE. Fa
 
 DROP TABLE → deletes the whole table (data + structure).
 
+<b>What are JOINS?</b>
+
+In SQL, JOIN is used to combine rows from two or more tables based on a related column.
+👉 Think of it as: “Show me data that is connected between these tables.”
+
+🔹 Types of Joins in SQL Server
+1. INNER JOIN
+
+Returns only the rows that have matching values in both tables.
+✅ Example: Employees who have a valid department.
+
+SELECT e.EmpID, e.Name, d.DeptName
+FROM Employee e
+INNER JOIN Department d
+   ON e.DeptID = d.DeptID;
+
+
+📌 Only employees with a department listed in Department table appear.
+
+2. LEFT JOIN (LEFT OUTER JOIN)
+
+Returns all rows from the left table, and the matching rows from the right table.
+
+If no match → NULL is returned for right table columns.
+
+SELECT e.EmpID, e.Name, d.DeptName
+FROM Employee e
+LEFT JOIN Department d
+   ON e.DeptID = d.DeptID;
+
+
+📌 Shows all employees, even if they don’t belong to a department.
+
+3. RIGHT JOIN (RIGHT OUTER JOIN)
+
+Opposite of LEFT JOIN.
+
+Returns all rows from the right table, and the matching rows from the left table.
+
+SELECT e.EmpID, e.Name, d.DeptName
+FROM Employee e
+RIGHT JOIN Department d
+   ON e.DeptID = d.DeptID;
+
+
+📌 Shows all departments, even if no employee belongs to them.
+
+4. FULL JOIN (FULL OUTER JOIN)
+
+Combines results of LEFT JOIN + RIGHT JOIN.
+
+Returns all rows from both tables, with NULL where there’s no match.
+
+SELECT e.EmpID, e.Name, d.DeptName
+FROM Employee e
+FULL JOIN Department d
+   ON e.DeptID = d.DeptID;
+
+
+📌 Shows all employees and all departments, whether matched or not.
+
+5. CROSS JOIN
+
+Returns Cartesian product of two tables (every row in first × every row in second).
+
+No ON condition.
+
+SELECT e.Name, d.DeptName
+FROM Employee e
+CROSS JOIN Department d;
+
+
+📌 If 5 employees × 3 departments → 15 rows.
+
+6. SELF JOIN
+
+A table joins with itself.
+
+Useful for hierarchical data (e.g., employee → manager).
+
+SELECT e1.Name AS Employee, e2.Name AS Manager
+FROM Employee e1
+INNER JOIN Employee e2
+   ON e1.ManagerID = e2.EmpID;
+
+
+📌 Shows employees along with their managers.
+
 
