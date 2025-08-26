@@ -268,4 +268,31 @@ INNER JOIN Employee e2
 
 📌 Shows employees along with their managers.
 
+## C sharp questions
+<b>1.reverse a string using recursive</b>
+```
+using System;
+
+namespace HelloWorld
+{
+	public class Program
+	{
+	  public static string ReverseString(string arr){
+	    if(arr.Length<=1)
+	    return arr;
+	    
+	    return ReverseString(arr.Substring(1))+arr[0];
+	  }
+	  
+	 public static void Main()
+		{
+		  string input = "HELLO";
+		  string reversed = ReverseString(input);
+		  Console.WriteLine(reversed);
+		  
+	}
+}
+}
+```
+
 
