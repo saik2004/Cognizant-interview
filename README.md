@@ -294,5 +294,139 @@ namespace HelloWorld
 }
 }
 ```
+<b>reverse a string using (if else)</b>
+```
+using System;
 
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter a string: ");
+        string input = Console.ReadLine();
+        string reversed = "";
 
+        int i = input.Length - 1;
+
+        while (i >= 0)
+        {
+            // Using if–else to control flow
+            if (i >= 0)
+            {
+                reversed = reversed + input[i];
+                i--;
+            }
+            else
+            {
+                // Not really needed, but keeps with the "if else" rule
+                break;
+            }
+        }
+
+        Console.WriteLine("Reversed string: " + reversed);
+    }
+}
+
+```
+<b>Reverse array using Builtin method</b>
+```
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] numbers = { 1, 2, 3, 4, 5, 6 };
+
+        Array.Reverse(numbers);  // built-in method
+
+        Console.WriteLine("Reversed array: " + string.Join(", ", numbers));
+    }
+}
+```
+<b>Reverse array using (if else)</b>
+```
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] numbers = { 1, 2, 3, 4, 5, 6 };
+
+        int start = 0;
+        int end = numbers.Length - 1;
+
+        while (start < end)
+        {
+            // Swap using if–else
+            if (start < end)
+            {
+                int temp = numbers[start];
+                numbers[start] = numbers[end];
+                numbers[end] = temp;
+
+                start++;
+                end--;
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        Console.WriteLine("Reversed array: " + string.Join(", ", numbers));
+    }
+}
+
+```
+<b>Number for count in string built in method</b>
+```
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter a string: ");
+        string input = Console.ReadLine();
+
+        // Using the built-in Length property
+        Console.WriteLine("Number of characters in the string: " + input.Length);
+    }
+}
+```
+<b>Number of count in string using (if else)</b>
+```
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter a string: ");
+        string input = Console.ReadLine();
+
+        int count = 0;
+        int i = 0;
+
+        // Loop through each character
+        while (true)
+        {
+            // if index is still within string → count
+            if (i < input.Length)
+            {
+                count++;
+                i++;
+            }
+            else
+            {
+                // otherwise stop
+                break;
+            }
+        }
+
+        Console.WriteLine("Number of characters in the string: " + count);
+    }
+}
+```
