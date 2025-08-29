@@ -430,3 +430,201 @@ class Program
     }
 }
 ```
+
+<b>Number of count in vowel and others</b>
+```
+1. Count vowels in a string
+using System;
+
+class Program {
+    static void Main() {
+        Console.Write("Enter a string: ");
+        string input = Console.ReadLine().ToLower();
+
+        int count = 0;
+        foreach (char c in input) {
+            if (c=='a' || c=='e' || c=='i' || c=='o' || c=='u') {
+                count++;
+            }
+        }
+        Console.WriteLine("Number of vowels: " + count);
+    }
+}
+
+2. Count consonants in a string
+using System;
+
+class Program {
+    static void Main() {
+        Console.Write("Enter a string: ");
+        string input = Console.ReadLine().ToLower();
+
+        int count = 0;
+        foreach (char c in input) {
+            if (c >= 'a' && c <= 'z') { // only letters
+                if (!(c=='a' || c=='e' || c=='i' || c=='o' || c=='u')) {
+                    count++;
+                }
+            }
+        }
+        Console.WriteLine("Number of consonants: " + count);
+    }
+}
+
+3. Check if string contains at least one vowel
+using System;
+
+class Program {
+    static void Main() {
+        Console.Write("Enter a string: ");
+        string input = Console.ReadLine().ToLower();
+
+        bool hasVowel = false;
+        foreach (char c in input) {
+            if ("aeiou".Contains(c)) {
+                hasVowel = true;
+                break;
+            }
+        }
+
+        if (hasVowel) Console.WriteLine("Yes, contains vowel");
+        else Console.WriteLine("No vowel found");
+    }
+}
+
+4. Find the first vowel in a string
+using System;
+
+class Program {
+    static void Main() {
+        Console.Write("Enter a string: ");
+        string input = Console.ReadLine().ToLower();
+
+        char firstVowel = '\0';
+        foreach (char c in input) {
+            if ("aeiou".Contains(c)) {
+                firstVowel = c;
+                break;
+            }
+        }
+
+        if (firstVowel != '\0')
+            Console.WriteLine("First vowel: " + firstVowel);
+        else
+            Console.WriteLine("No vowel found");
+    }
+}
+
+5. Replace all vowels with *
+using System;
+
+class Program {
+    static void Main() {
+        Console.Write("Enter a string: ");
+        string input = Console.ReadLine();
+
+        string result = "";
+        foreach (char c in input) {
+            if ("aeiouAEIOU".Contains(c))
+                result += '*';
+            else
+                result += c;
+        }
+        Console.WriteLine("Replaced string: " + result);
+    }
+}
+
+6. Check if first and last character are vowels
+using System;
+
+class Program {
+    static void Main() {
+        Console.Write("Enter a string: ");
+        string input = Console.ReadLine();
+
+        char first = input[0];
+        char last = input[input.Length - 1];
+
+        if ("aeiouAEIOU".Contains(first) && "aeiouAEIOU".Contains(last))
+            Console.WriteLine("Yes, both are vowels");
+        else
+            Console.WriteLine("No, not both vowels");
+    }
+}
+
+7. Count uppercase and lowercase vowels separately
+using System;
+
+class Program {
+    static void Main() {
+        Console.Write("Enter a string: ");
+        string input = Console.ReadLine();
+
+        int upper = 0, lower = 0;
+        foreach (char c in input) {
+            if ("AEIOU".Contains(c)) upper++;
+            else if ("aeiou".Contains(c)) lower++;
+        }
+
+        Console.WriteLine("Uppercase vowels: " + upper);
+        Console.WriteLine("Lowercase vowels: " + lower);
+    }
+}
+
+8. Print only vowels from a string
+using System;
+
+class Program {
+    static void Main() {
+        Console.Write("Enter a string: ");
+        string input = Console.ReadLine();
+
+        string vowels = "";
+        foreach (char c in input) {
+            if ("aeiouAEIOU".Contains(c)) {
+                vowels += c;
+            }
+        }
+        Console.WriteLine("Vowels: " + vowels);
+    }
+}
+
+9. Remove vowels from a string
+using System;
+
+class Program {
+    static void Main() {
+        Console.Write("Enter a string: ");
+        string input = Console.ReadLine();
+
+        string result = "";
+        foreach (char c in input) {
+            if (!"aeiouAEIOU".Contains(c)) {
+                result += c;
+            }
+        }
+        Console.WriteLine("Without vowels: " + result);
+    }
+}
+
+10. Check if string has all vowels at least once
+using System;
+
+class Program {
+    static void Main() {
+        Console.Write("Enter a string: ");
+        string input = Console.ReadLine().ToLower();
+
+        bool hasA = input.Contains('a');
+        bool hasE = input.Contains('e');
+        bool hasI = input.Contains('i');
+        bool hasO = input.Contains('o');
+        bool hasU = input.Contains('u');
+
+        if (hasA && hasE && hasI && hasO && hasU)
+            Console.WriteLine("Yes, contains all vowels");
+        else
+            Console.WriteLine("No, missing some vowels");
+    }
+}
+```
