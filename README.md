@@ -628,3 +628,40 @@ class Program {
     }
 }
 ```
+<b>check whether the number is prime or not</b>
+```
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+	  Console.WriteLine("Enter your number: ");
+	  int input = Convert.ToInt32(Console.ReadLine());
+	  
+	  bool isPrime = true;
+	  
+	  if(input<=1){
+	   isPrime = false;
+	  }else{
+	    for(int i = 2;i<=input/2;i++){
+	      if(input%i == 0){
+	        isPrime = false;
+	        break;
+	      }
+	    }
+	  }
+	  if(isPrime){
+	    Console.WriteLine(input +" :is a prime number");
+	  }else{
+	    Console.WriteLine(input +" : is not a prime number");
+	  }
+		}
+	}
+}
+```
